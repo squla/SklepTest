@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace domain.ValueObjects
+namespace domain.Order
 {
-    class Feature
+    public class PaymentType
     {
-        public string Name { get; set; }
-        public Object Value { get; set; }
     }
 }

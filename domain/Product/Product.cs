@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using domain.ValueObjects;
 
-namespace domain.Entities
+namespace domain.Product
 {
-    class Product
+    public class Product
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public float Price { get; set; }
         public Category Type { get; set; }

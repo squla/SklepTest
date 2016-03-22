@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using domain.ValueObjects;
-
-namespace domain.Entities
+using domain.Product;
+namespace domain.Order
 {
-    class Order
+    public class Order
     {
-        public virtual ICollection<Product> Products { get; set; }
+        public int Id;
+        public virtual ICollection<Product.Product> Products { get; set; }
         public float Amount { get; set; }
         public Object ShipmentStatus { get; set; }
         public Object DeliveryStatus { get; set; }
         public PaymentType Payment { get; set; }
-        public Costomer OwnerCostomer { get; set; }
+        public Customer.Customer OwnerCostomer { get; set; }
     }
 }

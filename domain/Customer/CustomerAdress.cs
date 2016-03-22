@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace domain.ValueObjects
+namespace domain.Customer
 {
-    class CustomerAdress
+    public class CustomerAdress
     {
         public string Adress1 { get; set; }
         public string Adress2 { get; set; }

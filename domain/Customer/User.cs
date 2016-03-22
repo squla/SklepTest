@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace domain.ValueObjects
+namespace domain.Entities
 {
-    class PaymentType
+    public class User
     {
+        //public Costumer Costumer_ID
     }
 }

@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sklep.Infrastructure
+namespace domain.Product
 {
-    public class Class1
+    public class Feature
     {
+        public string Name { get; set; }
+        public Object Value { get; set; }
     }
 }

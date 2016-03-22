@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace domain.Entities
+namespace domain.Product
 {
-    class Category
+    public class Category
     {
         public string Name { get; set; }
     }
