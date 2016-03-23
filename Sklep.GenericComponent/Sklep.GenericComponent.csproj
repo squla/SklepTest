@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{581063EA-2299-4A6D-9B14-FC2DC53194CF}</ProjectGuid>
+    <ProjectGuid>{24BC8052-DCA2-445A-B135-40FF2A5A4738}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sklep.Application</RootNamespace>
-    <AssemblyName>Sklep.Application</AssemblyName>
+    <RootNamespace>Sklep.GenericComponent</RootNamespace>
+    <AssemblyName>Sklep.GenericComponent</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,26 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\IOrderService.cs" />
-    <Compile Include="Interfaces\IProductService.cs" />
-    <Compile Include="OrderService.cs" />
-    <Compile Include="ProductService.cs" />
+    <Compile Include="IGenericRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup />
-  <ItemGroup>
-    <ProjectReference Include="..\domain\Sklep.Domain.csproj">
-      <Project>{4b5aae5a-33ee-46f1-a31f-9dd541bead1b}</Project>
-      <Name>Sklep.Domain</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Sklep.GenericComponent\Sklep.GenericComponent.csproj">
-      <Project>{24bc8052-dca2-445a-b135-40ff2a5a4738}</Project>
-      <Name>Sklep.GenericComponent</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Sklep.Infrastructure\Sklep.Infrastructure.csproj">
-      <Project>{217f8e4e-daa6-4e4d-b9cb-aa610c6e3f2b}</Project>
-      <Name>Sklep.Infrastructure</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

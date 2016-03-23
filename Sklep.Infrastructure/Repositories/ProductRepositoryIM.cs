@@ -1,8 +1,9 @@
 ﻿using domain.Product;
+using domain.Product.Repositories;
 
 namespace Sklep.Infrastructure.Repositories
 {
-    public class ProductRepositoryIM : GenericCRUDRepositories<Product>
+    public class ProductRepositoryIM : GenericCRUDRepositories<Product>, IProductRepository
     {
         public override Product Find(int id)
         {
@@ -15,6 +16,34 @@ namespace Sklep.Infrastructure.Repositories
                 }
             }
             return tmpProduct;
+        }
+
+        public bool AddFeatures(int id, Feature f)
+        {
+            Product product = Find(id);
+            if (product != null)
+            {
+                product.Features.Add(f);
+                return true;
+            }
+            return false;
+        }
+
+        public bool RemoveFeatures(int id, Feature f)
+        {
+            Product product = Find(id);
+            if (product != null)
+            {
+                product.Features.Remove(f);
+                return true;
+            }
+            return false;
+        }
+
+        public void SetCategory(int id, Category category)
+        {
+            Product product = Find(id);
+            if (product != null) product.Type = category;
         }
     }
 }

@@ -3,9 +3,32 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "application", "SklepTest\application.csproj", "{1E66748D-82EC-4042-9524-336B04BBBC0B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sklep.WebApp", "SklepTest\Sklep.WebApp.csproj", "{1E66748D-82EC-4042-9524-336B04BBBC0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "domain", "domain\domain.csproj", "{4B5AAE5A-33EE-46F1-A31F-9DD541BEAD1B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sklep.Domain", "domain\Sklep.Domain.csproj", "{4B5AAE5A-33EE-46F1-A31F-9DD541BEAD1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sklep.Application", "Sklep.Application\Sklep.Application.csproj", "{581063EA-2299-4A6D-9B14-FC2DC53194CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0.Presentation", "0.Presentation", "{D5EB1296-0550-45EA-BE31-A32D36E6BF4F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Application", "1.Application", "{CE5B566F-43E2-46E3-8CFC-AF034BC3583F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Domain", "2.Domain", "{6E1B37B0-96F5-46FE-AAA8-55CCF326C362}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Infrastructure", "3.Infrastructure", "{805E2131-DC42-4306-885B-F899057EB346}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sklep.GenericComponent", "Sklep.GenericComponent\Sklep.GenericComponent.csproj", "{24BC8052-DCA2-445A-B135-40FF2A5A4738}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sklep.Infrastructure", "Sklep.Infrastructure\Sklep.Infrastructure.csproj", "{217F8E4E-DAA6-4E4D-B9CB-AA610C6E3F2B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Test", "4.Test", "{4DACA630-3464-4766-939B-B6B7AF946B8C}"
+	ProjectSection(SolutionItems) = preProject
+		domain\Product\Category.cs = domain\Product\Category.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sklep.ObjectMother", "Sklep.ObjectMother\Sklep.ObjectMother.csproj", "{A59EC8DD-BD48-426E-9654-4FC857032816}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sklep.Application.UnitTests", "Sklep.Application.UnitTests\Sklep.Application.UnitTests.csproj", "{00FA24C3-3D55-46FB-A433-387C2DA822E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +44,37 @@ Global
 		{4B5AAE5A-33EE-46F1-A31F-9DD541BEAD1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B5AAE5A-33EE-46F1-A31F-9DD541BEAD1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B5AAE5A-33EE-46F1-A31F-9DD541BEAD1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{581063EA-2299-4A6D-9B14-FC2DC53194CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{581063EA-2299-4A6D-9B14-FC2DC53194CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{581063EA-2299-4A6D-9B14-FC2DC53194CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{581063EA-2299-4A6D-9B14-FC2DC53194CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24BC8052-DCA2-445A-B135-40FF2A5A4738}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24BC8052-DCA2-445A-B135-40FF2A5A4738}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24BC8052-DCA2-445A-B135-40FF2A5A4738}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24BC8052-DCA2-445A-B135-40FF2A5A4738}.Release|Any CPU.Build.0 = Release|Any CPU
+		{217F8E4E-DAA6-4E4D-B9CB-AA610C6E3F2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{217F8E4E-DAA6-4E4D-B9CB-AA610C6E3F2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{217F8E4E-DAA6-4E4D-B9CB-AA610C6E3F2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{217F8E4E-DAA6-4E4D-B9CB-AA610C6E3F2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A59EC8DD-BD48-426E-9654-4FC857032816}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A59EC8DD-BD48-426E-9654-4FC857032816}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A59EC8DD-BD48-426E-9654-4FC857032816}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A59EC8DD-BD48-426E-9654-4FC857032816}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00FA24C3-3D55-46FB-A433-387C2DA822E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00FA24C3-3D55-46FB-A433-387C2DA822E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00FA24C3-3D55-46FB-A433-387C2DA822E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00FA24C3-3D55-46FB-A433-387C2DA822E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1E66748D-82EC-4042-9524-336B04BBBC0B} = {D5EB1296-0550-45EA-BE31-A32D36E6BF4F}
+		{4B5AAE5A-33EE-46F1-A31F-9DD541BEAD1B} = {6E1B37B0-96F5-46FE-AAA8-55CCF326C362}
+		{581063EA-2299-4A6D-9B14-FC2DC53194CF} = {CE5B566F-43E2-46E3-8CFC-AF034BC3583F}
+		{24BC8052-DCA2-445A-B135-40FF2A5A4738} = {6E1B37B0-96F5-46FE-AAA8-55CCF326C362}
+		{217F8E4E-DAA6-4E4D-B9CB-AA610C6E3F2B} = {805E2131-DC42-4306-885B-F899057EB346}
+		{A59EC8DD-BD48-426E-9654-4FC857032816} = {4DACA630-3464-4766-939B-B6B7AF946B8C}
+		{00FA24C3-3D55-46FB-A433-387C2DA822E6} = {4DACA630-3464-4766-939B-B6B7AF946B8C}
 	EndGlobalSection
 EndGlobal
