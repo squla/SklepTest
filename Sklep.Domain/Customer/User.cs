@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace domain.Product
+namespace Sklep.Domain.Entities
 {
-    public class Feature
+    public class User
     {
-        public string Name { get; set; }
-        public Object Value { get; set; }
+        //public Costumer Costumer_ID
     }
 }

@@ -48,8 +48,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\domain\Sklep.Domain.csproj">
-      <Project>{4b5aae5a-33ee-46f1-a31f-9dd541bead1b}</Project>
+    <ProjectReference Include="..\Sklep.Domain\Sklep.Domain.csproj">
+      <Project>{a797ff61-cd37-4c96-a1c5-a43bcea8cc34}</Project>
       <Name>Sklep.Domain</Name>
     </ProjectReference>
     <ProjectReference Include="..\Sklep.GenericComponent\Sklep.GenericComponent.csproj">

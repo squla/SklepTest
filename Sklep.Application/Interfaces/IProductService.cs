@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using domain.Product;
+using Sklep.Domain.Product;
 
 namespace Sklep.Application.Interfaces
 {

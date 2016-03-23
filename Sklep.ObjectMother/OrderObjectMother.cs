@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
-using domain.Order;
-using domain.Product;
+using Sklep.Domain.Order;
+using Sklep.Domain.Product;
 
 namespace Sklep.ObjectMother
 {

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using domain.Order;
-using domain.Order.Repositories;
-using domain.Product;
+using Sklep.Domain.Order;
+using Sklep.Domain.Order.Repositories;
+using Sklep.Domain.Product;
 using Sklep.Application.Interfaces;
 using Sklep.Infrastructure.Repositories;
 

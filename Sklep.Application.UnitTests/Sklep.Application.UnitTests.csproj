@@ -57,13 +57,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\domain\Sklep.Domain.csproj">
-      <Project>{4B5AAE5A-33EE-46F1-A31F-9DD541BEAD1B}</Project>
-      <Name>Sklep.Domain</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Sklep.Application\Sklep.Application.csproj">
       <Project>{581063EA-2299-4A6D-9B14-FC2DC53194CF}</Project>
       <Name>Sklep.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sklep.Domain\Sklep.Domain.csproj">
+      <Project>{a797ff61-cd37-4c96-a1c5-a43bcea8cc34}</Project>
+      <Name>Sklep.Domain</Name>
     </ProjectReference>
     <ProjectReference Include="..\Sklep.ObjectMother\Sklep.ObjectMother.csproj">
       <Project>{a59ec8dd-bd48-426e-9654-4fc857032816}</Project>

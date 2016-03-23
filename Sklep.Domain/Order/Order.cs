@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using domain.Product;
-namespace domain.Order
+using Sklep.Domain.Product;
+namespace Sklep.Domain.Order
 {
     public class Order
     {

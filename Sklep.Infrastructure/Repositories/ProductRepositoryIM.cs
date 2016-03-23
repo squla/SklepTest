@@ -1,5 +1,5 @@
-﻿using domain.Product;
-using domain.Product.Repositories;
+﻿using Sklep.Domain.Product;
+using Sklep.Domain.Product.Repositories;
 
 namespace Sklep.Infrastructure.Repositories
 {

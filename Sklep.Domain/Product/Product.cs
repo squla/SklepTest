@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace domain.Product
+namespace Sklep.Domain.Product
 {
     public class Product
     {

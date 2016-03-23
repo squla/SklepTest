@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Runtime.Serialization.Formatters;
-using domain.Product;
-using domain.Product.Repositories;
+using Sklep.Domain.Product;
+using Sklep.Domain.Product.Repositories;
 using Sklep.Application.Interfaces;
 using Sklep.Infrastructure.Repositories;
 

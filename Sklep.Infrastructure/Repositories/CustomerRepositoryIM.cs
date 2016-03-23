@@ -1,5 +1,5 @@
 ﻿using System;
-using domain.Customer;
+using Sklep.Domain.Customer;
 
 namespace Sklep.Infrastructure.Repositories
 {

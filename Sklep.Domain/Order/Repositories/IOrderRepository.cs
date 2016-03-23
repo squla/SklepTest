@@ -1,6 +1,6 @@
 ﻿using Sklep.GenericComponent;
 
-namespace domain.Order.Repositories
+namespace Sklep.Domain.Order.Repositories
 {
     public interface IOrderRepository : IGenericRepository<Order>
     {

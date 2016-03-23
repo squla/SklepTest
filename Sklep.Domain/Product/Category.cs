@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace domain.Order
+namespace Sklep.Domain.Product
 {
-    public class PaymentType
+    public class Category
     {
+        public string Name { get; set; }
     }
 }
