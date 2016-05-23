@@ -11,8 +11,8 @@ namespace Sklep.Domain.Order
         public int Id;
         public virtual ICollection<Product.Product> Products { get; set; }
         public float Amount { get; set; }
-        public Object ShipmentStatus { get; set; }
-        public Object DeliveryStatus { get; set; }
+        public ShipmentStatusEnum ShipmentStatus { get; set; }
+        public DeliveryStatusEnum DeliveryStatus { get; set; }
         public PaymentType Payment { get; set; }
         public Customer.Customer OwnerCostomer { get; set; }
     }
