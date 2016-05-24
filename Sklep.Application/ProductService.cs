@@ -33,7 +33,8 @@ namespace Sklep.Application
 
         public bool RemoveProduct(Product p)
         {
-            return _productRepository.Delete(p.Id) != null;
+           // return _productRepository.Delete(p.Id) != null;
+            return false;
         }
 
         public bool AddFeatures(int id, Feature f)

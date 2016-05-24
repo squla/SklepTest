@@ -1,6 +1,10 @@
-﻿using System.Data.Entity;
+﻿using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using Sklep.Domain.Customer;
 using Sklep.Domain.Entities;
+using Sklep.Domain.Product;
 
 namespace Sklep.Infrastructure.Seed
 {
@@ -25,6 +29,8 @@ namespace Sklep.Infrastructure.Seed
                     }
 
                         )));
+           
+            context.SaveChanges();
         }
     }
 }

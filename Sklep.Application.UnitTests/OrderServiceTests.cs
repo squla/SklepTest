@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Sklep.Application.Interfaces;
 using Sklep.ObjectMother;
 
+/**
 namespace Sklep.Application.Tests
 {
     [TestClass()]
@@ -55,3 +56,4 @@ namespace Sklep.Application.Tests
         }
     }
 }
+    **/

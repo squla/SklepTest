@@ -29,6 +29,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Common", "4.Common", "{F3
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sklep.Common", "Sklep.Common\Sklep.Common.csproj", "{290C9FA2-1462-4B33-A6E3-21502F54DFDA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplicationTest", "ConsoleApplicationTest\ConsoleApplicationTest.csproj", "{7A240E72-0229-406F-819A-A8146A999B86}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{290C9FA2-1462-4B33-A6E3-21502F54DFDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{290C9FA2-1462-4B33-A6E3-21502F54DFDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{290C9FA2-1462-4B33-A6E3-21502F54DFDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A240E72-0229-406F-819A-A8146A999B86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A240E72-0229-406F-819A-A8146A999B86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A240E72-0229-406F-819A-A8146A999B86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A240E72-0229-406F-819A-A8146A999B86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,5 +81,6 @@ Global
 		{00FA24C3-3D55-46FB-A433-387C2DA822E6} = {4DACA630-3464-4766-939B-B6B7AF946B8C}
 		{A797FF61-CD37-4C96-A1C5-A43BCEA8CC34} = {6E1B37B0-96F5-46FE-AAA8-55CCF326C362}
 		{290C9FA2-1462-4B33-A6E3-21502F54DFDA} = {F35CE6A2-C2B8-4927-A226-47DF30D5129B}
+		{7A240E72-0229-406F-819A-A8146A999B86} = {4DACA630-3464-4766-939B-B6B7AF946B8C}
 	EndGlobalSection
 EndGlobal

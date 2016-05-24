@@ -11,7 +11,7 @@ namespace Sklep.Infrastructure.Repositories
             Customer tmpCustomer = null;
             foreach (var c in list)
             {
-                if (c.Id == id)
+                //if (c.Id.Equals(id))
                 {
                     tmpCustomer = c;
                 }

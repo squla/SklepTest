@@ -11,7 +11,7 @@ namespace Sklep.Infrastructure.Repositories
             Order tmpOrder = null;
             foreach (var o in list)
             {
-                if (o.Id == id)
+               // if (o.Id == id)
                 {
                     tmpOrder = o;
                 }

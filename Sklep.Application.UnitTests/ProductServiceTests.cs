@@ -9,6 +9,7 @@ using Sklep.Domain.Product;
 using Sklep.Application.Interfaces;
 using Sklep.ObjectMother;
 
+/**
 namespace Sklep.Application.Tests
 {
     [TestClass()]
@@ -70,4 +71,4 @@ namespace Sklep.Application.Tests
             Assert.IsTrue(true);
         }
     }
-}
+}**/

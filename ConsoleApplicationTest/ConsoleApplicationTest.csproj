@@ -4,15 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A59EC8DD-BD48-426E-9654-4FC857032816}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{7A240E72-0229-406F-819A-A8146A999B86}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sklep.ObjectMother</RootNamespace>
-    <AssemblyName>Sklep.ObjectMother</AssemblyName>
+    <RootNamespace>ConsoleApplicationTest</RootNamespace>
+    <AssemblyName>ConsoleApplicationTest</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -30,7 +33,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -40,11 +52,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="OrderObjectMother.cs" />
-    <Compile Include="ProductObjectMother.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sklep.Application.UnitTests\Sklep.Application.UnitTests.csproj">
+      <Project>{00fa24c3-3d55-46fb-a433-387c2da822e6}</Project>
+      <Name>Sklep.Application.UnitTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sklep.Application\Sklep.Application.csproj">
+      <Project>{581063ea-2299-4a6d-9b14-fc2dc53194cf}</Project>
+      <Name>Sklep.Application</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Sklep.Common\Sklep.Common.csproj">
       <Project>{290c9fa2-1462-4b33-a6e3-21502f54dfda}</Project>
       <Name>Sklep.Common</Name>
@@ -52,6 +75,18 @@
     <ProjectReference Include="..\Sklep.Domain\Sklep.Domain.csproj">
       <Project>{a797ff61-cd37-4c96-a1c5-a43bcea8cc34}</Project>
       <Name>Sklep.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sklep.GenericComponent\Sklep.GenericComponent.csproj">
+      <Project>{24bc8052-dca2-445a-b135-40ff2a5a4738}</Project>
+      <Name>Sklep.GenericComponent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sklep.Infrastructure\Sklep.Infrastructure.csproj">
+      <Project>{217f8e4e-daa6-4e4d-b9cb-aa610c6e3f2b}</Project>
+      <Name>Sklep.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sklep.ObjectMother\Sklep.ObjectMother.csproj">
+      <Project>{a59ec8dd-bd48-426e-9654-4fc857032816}</Project>
+      <Name>Sklep.ObjectMother</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -10,7 +10,7 @@ namespace Sklep.Infrastructure.Repositories
             Product tmpProduct = null;
             foreach (var p in list)
             {
-                if (p.Id == id)
+                //if (p.Id == id)
                 {
                     tmpProduct = p;
                 }

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Sklep.Domain.Order;
 using Sklep.Domain.Product;
 
@@ -10,7 +11,7 @@ namespace Sklep.ObjectMother
         {
             return new Order
             {
-                Id = 1,
+                Id = new Guid(),
                 Products = new List<Product>(),
                 Amount = 0F
             };

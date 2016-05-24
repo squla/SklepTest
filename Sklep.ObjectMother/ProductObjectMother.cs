@@ -1,4 +1,5 @@
-﻿using System.CodeDom;
+﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using Sklep.Domain.Product;
 
@@ -10,7 +11,7 @@ namespace Sklep.ObjectMother
         {
             return new Product
             {
-                Id = 1, 
+                Id = new Guid(), 
                 Name = "Żelka",
                 Price = 1.0F,
                 Type = new Category(),
